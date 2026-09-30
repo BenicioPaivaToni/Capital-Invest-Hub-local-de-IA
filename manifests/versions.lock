@@ -1,0 +1,32 @@
+host:
+  bios_version: "<FIXAR>"
+  cpu_microcode: "<FIXAR>"
+  windows_build: "<FIXAR>"
+  nvidia_driver: "<FIXAR>"
+  wsl_version: "<FIXAR>"
+  wsl_kernel: "<FIXAR>"
+ubuntu:
+  release: "<FIXAR>"
+  cuda_toolkit: "<FIXAR>"
+  ffmpeg: "<FIXAR>"
+  tesseract: "<FIXAR>"
+runtimes:
+  llama_cpp_commit: "<FIXAR>"
+  whisper_cpp_commit: "n/a"          # somente se o fallback for adotado
+python_envs:                          # detalhes completos em manifests/locks/
+  tools: "<FIXAR>"
+  docling: "<FIXAR>"
+  ocr: "<FIXAR>"
+  media: "<FIXAR>"
+  retrieval: "<FIXAR>"
+containers:
+  postgres_pgvector: "<imagem>@<DIGEST>"
+  valkey: "<imagem>@<DIGEST>"
+  prometheus: "<imagem>@<DIGEST>"
+  grafana: "<imagem>@<DIGEST>"
+exporters:
+  node_exporter: "<FIXAR>"
+  gpu_exporter: "<FIXAR>"
+gpus:
+  gpu_a_uuid: "<FIXAR>"               # slot 1 (CPU)
+  gpu_b_uuid: "<FIXAR>"               # slot 2 (chipset)

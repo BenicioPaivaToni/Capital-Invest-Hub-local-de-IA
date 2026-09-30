@@ -1,0 +1,36 @@
+- id: qwen38-27b-q4km
+  source: hf://ggml-org/Qwen3.8-27B-GGUF
+  revision: "<REV>"
+  files:
+    - { name: "<ARQ_Q4_K_M>", sha256: "<FIXAR>" }
+    - { name: "<ARQ_MMPROJ>", sha256: "<FIXAR>" }
+  license: Apache-2.0
+  runtime: "llama.cpp@<SHA>"
+  roles: [chat, rag, coding, extraction, vision]
+- id: whisper-large-v3-ct2
+  source: hf://Systran/faster-whisper-large-v3
+  revision: "<REV>"
+  license: MIT
+  roles: [stt]
+- id: whisper-large-v3-turbo-ct2
+  source: "convertido internamente de hf://openai/whisper-large-v3-turbo@<REV>"
+  license: MIT
+  roles: [stt]
+- id: qwen3-embedding-0.6b
+  source: hf://Qwen/Qwen3-Embedding-0.6B
+  revision: "<REV>"
+  license: Apache-2.0
+  roles: [embedding]
+- id: qwen3-reranker-0.6b
+  source: hf://Qwen/Qwen3-Reranker-0.6B
+  revision: "<REV>"
+  license: Apache-2.0
+  roles: [rerank]
+- id: docling-artifacts
+  source: "docling-tools models download (docling <FIXAR>)"
+  license: "<FIXAR por artefato>"
+  roles: [layout, tables]
+- id: paddleocr-ppocrv5-latin
+  source: "PaddleOCR <FIXAR>"
+  license: Apache-2.0
+  roles: [ocr]

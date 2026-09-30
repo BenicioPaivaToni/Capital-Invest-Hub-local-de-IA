@@ -1,0 +1,8 @@
+*.env
+*.key
+*.keys
+*.dump
+*.tar
+golden/
+secrets/
+__pycache__/
